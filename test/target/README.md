@@ -169,11 +169,17 @@ Cada paso tiene su issue, colgando de la #1: #24 (bus), #25 (un encoder),
 
 ## Preparar el PC (solo la primera vez)
 
-Si el PC está limpio, ejecuta esto desde la carpeta del repo:
+Si el PC está limpio, ejecuta esto desde la carpeta del repo (para Windows):
 
 ```powershell
 .\test\target\instalar_entorno.ps1
 ```
+
+Ejecuta esto desde la carpeta del repo (para Ubuntu):
+```
+bash ./test/target/instalar_entorno.sh
+```
+
 
 Instala `arduino-cli`, el soporte de placa del ESP32 y del Arduino MKR, y la
 librería CAN. Al terminar compila todos los sketches para comprobar que todo
